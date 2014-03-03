@@ -1,5 +1,5 @@
 $(document).ready( function() {
-
+  
   // Loads stored preferences and login details
   chrome.storage.local.get(['stored_username', 'stored_password', 'stored_autofill', 'stored_autosubmit'], function (result) {
       $("#username").val(result.stored_username);
@@ -21,7 +21,7 @@ $(document).ready( function() {
       $("#save").click();
     }
   }
-  
+
   $('#username').keyup(details_changed);
   $('#password').keyup(details_changed);
 
