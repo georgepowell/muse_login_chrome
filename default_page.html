@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Muse login</title>
+    <style>
+      body {
+        min-width: 300px;
+        overflow-x: hidden;
+        font-family: sans-serif;
+      }
+      p {
+        font-size: 11px;
+      }
+      h5 {
+        text-decoration: underline;
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .small_check {
+        margin-top: 15px;
+      }
+      .inline {
+        display: inline;
+      }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="default_page.js"></script>
+  </head>
+  <body>
+    <h5>MUSE login</h5>
+
+    <p>This simple plugin stores your CiCs username and password locally, and automatically enters and submits your details whenever you arrive on <a href="https://login.shef.ac.uk" target="_blank">login.shef.ac.uk</a>.</p>
+
+    <p>Source code on <a href="https://login.shef.ac.uk" target="_blank">GitHub</a>.</p>
+
+    <h5>Details</h5>
+
+    <input id="username" type="text" placeholder="username"> </input>
+    <br/>
+
+    <input id="password" type="password" placeholder="password"> </input>
+
+    <button id="save" >Save</button>
+    <br/>
+
+    <input id="auto_fill_checkbox" class="small_check" type="checkbox" name="auto_fill_check" /><p class="inline">Auto-fill username &amp password</p>
+    <br/>
+    
+    <input id="auto_submit_checkbox" class="small_check" type="checkbox" name="auto_submit_check" value="Hello World"/><p class="inline">Auto-submit and login</p></input>
+
+  </body>
+</html>
